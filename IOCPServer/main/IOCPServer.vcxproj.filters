@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{de2ba7fd-b204-4251-9328-938c0819a9e2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{63956fe4-4f18-421d-97ed-774888c06674}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{65087833-7904-40e5-92d5-5e164054007a}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{8b224dea-ecd3-4200-a391-f5b74e641ab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module">
+      <UniqueIdentifier>{2435afbb-8705-4172-9801-9893ac583452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mysql">
+      <UniqueIdentifier>{8f68ed5e-bbc1-4440-b234-ab584b97845f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="task">
+      <UniqueIdentifier>{e145c93d-9813-4599-8f20-ddc9837dfdbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{70c63183-383a-41ff-b775-f3878d992094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbproxy">
+      <UniqueIdentifier>{0430e7cb-28cb-41d4-9bd0-76889a4bf53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="console">
+      <UniqueIdentifier>{ff6bab95-53a8-495c-b713-e834fdc7e00a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{99a59840-f208-46ca-bda1-314ed6a64e25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmAlarm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GUID.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WriteLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iocp_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\jsontest.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\main_jsontest.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\main_jsontestrunner.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dbproxy\DBProxy.cpp">
+      <Filter>dbproxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dbproxy\DBProxyPool.cpp">
+      <Filter>dbproxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dbproxy\MSsqlDBProxy.cpp">
+      <Filter>dbproxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\console\ScheduleServer.cpp">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\module\MySQLProxy.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\module\SQLServerProxy.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\CommandContextParse.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\ConfigBox.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\Logger.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\MiscTool.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\BaseThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\MaintanceThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\TaskThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task\ParseTask.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IOCPServer.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DisposeDecorator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmAlarm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUID.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WriteLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iocp_server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\autolink.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\config.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\features.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\json_batchallocator.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\jsontest.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\reader.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\value.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\writer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dbproxy\DBLocker.h">
+      <Filter>dbproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dbproxy\DBProxy.h">
+      <Filter>dbproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dbproxy\DBProxyI.h">
+      <Filter>dbproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dbproxy\DBProxyPool.h">
+      <Filter>dbproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dbproxy\MSsqlDBProxy.h">
+      <Filter>dbproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\console\generaldef.h">
+      <Filter>console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\console\ScheduleServer.h">
+      <Filter>console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\module\IDataBaseProxy.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\module\IModule.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\module\MySQLProxy.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\module\SQLServerProxy.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mysql\my_alloc.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mysql\my_list.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mysql\mysql.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mysql\mysql_com.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mysql\mysql_time.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mysql\mysql_version.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mysql\typelib.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\CharacterTransfer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\Chronograph.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\CommandContextParse.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\ConfigBox.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\Locker.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\Logger.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\MiscTool.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\ProcessInfo.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\TimeConsuming.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\BaseThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\MaintanceThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\TaskThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\task\ParseTask.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\task\Task.h">
+      <Filter>task</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\comm.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\gSERVER.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Hong2.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Huang2.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Hui2.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\linjua.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\lv2.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Net.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\IOCPServer.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\IOCPServer.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\服务器4.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\客户端已连接.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\json\json_internalarray.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="..\json\json_internalmap.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="..\json\json_valueiterator.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="..\dbproxy\msado60_Backcompat_i386.tlb">
+      <Filter>dbproxy</Filter>
+    </None>
+  </ItemGroup>
+</Project>

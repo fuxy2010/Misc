@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>.\main;..\main;..\utility\boost_1_46_1;..\utility\tut;..\module;..\task;..\thread;..\misc;..\dbproxy;..\json;..\mysql;..\console;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\IOCPServer.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\IOCPServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\IOCPServer.exe</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(ProjectName).exe ..\bin\$(ProjectName)D.exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>.\main;..\main;..\utility\boost_1_46_1;..\utility\tut;..\module;..\task;..\thread;..\misc;..\dbproxy;..\json;..\mysql;..\console;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\IOCPServer.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\IOCPServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\IOCPServer.exe</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(ProjectName).exe ..\bin\$(ProjectName).exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\console\ScheduleServer.cpp" />
+    <ClCompile Include="..\dbproxy\DBProxy.cpp" />
+    <ClCompile Include="..\dbproxy\DBProxyPool.cpp" />
+    <ClCompile Include="..\dbproxy\MSsqlDBProxy.cpp" />
+    <ClCompile Include="..\json\jsontest.cpp" />
+    <ClCompile Include="..\json\json_reader.cpp" />
+    <ClCompile Include="..\json\json_value.cpp" />
+    <ClCompile Include="..\json\json_writer.cpp" />
+    <ClCompile Include="..\json\main_jsontest.cpp" />
+    <ClCompile Include="..\json\main_jsontestrunner.cpp" />
+    <ClCompile Include="..\misc\CommandContextParse.cpp" />
+    <ClCompile Include="..\misc\ConfigBox.cpp" />
+    <ClCompile Include="..\misc\Logger.cpp" />
+    <ClCompile Include="..\misc\MiscTool.cpp" />
+    <ClCompile Include="..\module\MySQLProxy.cpp" />
+    <ClCompile Include="..\module\SQLServerProxy.cpp" />
+    <ClCompile Include="..\task\ParseTask.cpp" />
+    <ClCompile Include="..\thread\BaseThread.cpp" />
+    <ClCompile Include="..\thread\MaintanceThread.cpp" />
+    <ClCompile Include="..\thread\TaskThread.cpp" />
+    <ClCompile Include="ClientSocket.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="FrmAlarm.cpp" />
+    <ClCompile Include="FrmMain.cpp" />
+    <ClCompile Include="GUID.CPP" />
+    <ClCompile Include="ShowData.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="IOCPServer.cpp" />
+    <ClCompile Include="iocp_server.cpp" />
+    <ClCompile Include="WriteLog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IOCPServer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\console\generaldef.h" />
+    <ClInclude Include="..\console\ScheduleServer.h" />
+    <ClInclude Include="..\dbproxy\DBLocker.h" />
+    <ClInclude Include="..\dbproxy\DBProxy.h" />
+    <ClInclude Include="..\dbproxy\DBProxyI.h" />
+    <ClInclude Include="..\dbproxy\DBProxyPool.h" />
+    <ClInclude Include="..\dbproxy\MSsqlDBProxy.h" />
+    <ClInclude Include="..\json\autolink.h" />
+    <ClInclude Include="..\json\config.h" />
+    <ClInclude Include="..\json\features.h" />
+    <ClInclude Include="..\json\forwards.h" />
+    <ClInclude Include="..\json\json.h" />
+    <ClInclude Include="..\json\jsontest.h" />
+    <ClInclude Include="..\json\json_batchallocator.h" />
+    <ClInclude Include="..\json\reader.h" />
+    <ClInclude Include="..\json\value.h" />
+    <ClInclude Include="..\json\writer.h" />
+    <ClInclude Include="..\misc\CharacterTransfer.h" />
+    <ClInclude Include="..\misc\Chronograph.h" />
+    <ClInclude Include="..\misc\CommandContextParse.h" />
+    <ClInclude Include="..\misc\ConfigBox.h" />
+    <ClInclude Include="..\misc\Locker.h" />
+    <ClInclude Include="..\misc\Logger.h" />
+    <ClInclude Include="..\misc\MiscTool.h" />
+    <ClInclude Include="..\misc\ProcessInfo.h" />
+    <ClInclude Include="..\misc\TimeConsuming.h" />
+    <ClInclude Include="..\module\IDataBaseProxy.h" />
+    <ClInclude Include="..\module\IModule.h" />
+    <ClInclude Include="..\module\MySQLProxy.h" />
+    <ClInclude Include="..\module\SQLServerProxy.h" />
+    <ClInclude Include="..\mysql\mysql.h" />
+    <ClInclude Include="..\mysql\mysql_com.h" />
+    <ClInclude Include="..\mysql\mysql_time.h" />
+    <ClInclude Include="..\mysql\mysql_version.h" />
+    <ClInclude Include="..\mysql\my_alloc.h" />
+    <ClInclude Include="..\mysql\my_list.h" />
+    <ClInclude Include="..\mysql\typelib.h" />
+    <ClInclude Include="..\task\ParseTask.h" />
+    <ClInclude Include="..\task\Task.h" />
+    <ClInclude Include="..\thread\BaseThread.h" />
+    <ClInclude Include="..\thread\MaintanceThread.h" />
+    <ClInclude Include="..\thread\TaskThread.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="ClientSocket.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="DisposeDecorator.h" />
+    <ClInclude Include="FrmAlarm.h" />
+    <ClInclude Include="FrmMain.h" />
+    <ClInclude Include="GUID.H" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ShowData.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="IOCPServer.h" />
+    <ClInclude Include="iocp_server.h" />
+    <ClInclude Include="WriteLog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\comm.ico" />
+    <CustomBuild Include="res\gSERVER.ico" />
+    <CustomBuild Include="res\Hong2.ico" />
+    <CustomBuild Include="res\Huang2.ico" />
+    <CustomBuild Include="res\Hui2.ico" />
+    <CustomBuild Include="res\linjua.ico" />
+    <CustomBuild Include="res\lv2.ico" />
+    <CustomBuild Include="res\Net.ico" />
+    <CustomBuild Include="res\IOCPServer.ico" />
+    <CustomBuild Include="res\IOCPServer.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\服务器4.ico" />
+    <CustomBuild Include="res\客户端已连接.ico" />
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\dbproxy\msado60_Backcompat_i386.tlb" />
+    <None Include="..\json\json_internalarray.inl" />
+    <None Include="..\json\json_internalmap.inl" />
+    <None Include="..\json\json_valueiterator.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
